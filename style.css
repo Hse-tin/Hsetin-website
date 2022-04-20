@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background: url('bg.jpg');
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 4%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 8);
+}
+
+.navlist{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 10%;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.searchbar{
+    width: 50%;
+    text-align: right;
+}
+.navlist li{
+    list-style: none;
+    margin: 0 4%    ;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: rgb(255, 255, 8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.navlist li a:hover{
+    color: rgb(199, 199, 124);
+    font-size: 20px;
+}
+
+#search{
+    background: none;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    padding: 0% 1%;
+    width: 45%;
+    color: yellow;
+}
+
+.btn{
+    background: yellow;
+    border: 1px solid black;
+    border-radius: 9px;
+    font-size: 10px;
+    padding: 4px 10px;
+}
+
+.btn:hover{
+    background: rgb(160, 160, 64);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 8%;
+    top: 15px;
+}
+
+.line{
+    width: 30px;
+    background-color: yellow;
+    height: 3px;
+    margin: 5px 3px;
+}
+.logoPH{
+    display: none;
+    position: absolute;
+}
+
+.firstsection{
+    height: 100vh;
+    background-color: black;
+}
+
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+}
+
+.mainbox img{
+    width: 50%;
+}
+
+.Texts{
+    width: 50%;
+    color: yellow;
+}
+
+.bigtext{
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.smalltext{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    line-height: 170%;
+}
+
+.section{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+footer{
+    background-color: black;
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 2%;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 550px) {
+    .background{
+        background: rgb(0, 0, 0, 0.7) url('bg1.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .navbar{
+        height: 250px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        
+    }
+    .navlist{
+        flex-direction: column;
+        padding: 4%;
+    }
+
+    .navlist li{
+        padding: 3%;
+    }
+    .mainbox img{
+        display: none;
+    }
+    .Texts{
+        width: 70%;
+    }
+    .bigtext{
+        font-size: 35px;
+    }
+    .firstsection{
+        height: 90vh;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .section img{
+        width: 50%;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    }
+
+    .HnavRESP{
+        height: 55px;
+    }
+    .VnavRESP{
+        opacity: 0;
+    }
+    .logoPH{
+        margin: 0px;
+    }
+}   
